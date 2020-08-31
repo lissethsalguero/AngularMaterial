@@ -45,9 +45,15 @@ body {
 }
 
 .card-header {
-  background-color: #fafafa;
+  background-color: #f2f3f3;
 }
 
 .card-section {
   max-width: 800px;
+}
+
+
+.vertical-form {
+  display: flex;
+  flex-direction: column;
 }

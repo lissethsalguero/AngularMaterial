@@ -1,0 +1,29 @@
+<mat-card class="example-card card-section">
+    <mat-card-header class="card-header-no-padding p-16 card-header">
+      <mat-card-title>Create Branch Office</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="mt-5">
+     <form [formGroup]="form" (ngSubmit)="onSubmit()" class="vertical-form">
+        <mat-form-field appearance="outline">
+            <mat-label>Description</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="description">
+            <mat-error *ngIf="form.controls.description.invalid">
+              This field is required.
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Address</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="direction">
+            <mat-error *ngIf="form.controls.direction.invalid">
+              This field is required.
+            </mat-error>
+          </mat-form-field>
+
+          <button mat-raised-button color="primary">Save</button>
+     </form>
+    </mat-card-content>
+    <!-- <mat-card-actions>
+      <button mat-button>Save</button>
+    </mat-card-actions> -->
+  </mat-card>
+  

@@ -12,9 +12,16 @@ import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { BranchOfficeFormComponent } from './master-data/branch-offices/branch-office-form/branch-office-form.component';
+import { BranchOfficesComponent } from './master-data/branch-offices/branch-offices/branch-offices.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
-  declarations: [AppComponent, EmployeesFormComponent],
+  declarations: [AppComponent, EmployeesFormComponent, BranchOfficeFormComponent, BranchOfficesComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -26,6 +33,12 @@ import { MatCardModule } from '@angular/material/card';
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent],
