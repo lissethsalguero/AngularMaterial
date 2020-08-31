@@ -1,0 +1,27 @@
+.container {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+mat-drawer,
+mat-drawer-content {
+  padding-top: 75px;
+  box-sizing: border-box;
+}
+
+.mat-toolbar-shadow {
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+mat-drawer {
+  width: 220px;
+}
+
+.roter-container {
+  min-height: 100vh;
+}

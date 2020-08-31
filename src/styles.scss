@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@for $i from 1 through 100 {
+  .p-#{$i} {
+    padding: #{$i}px;
+  }
+
+  .px-#{$i} {
+    padding-right: #{$i}px;
+    padding-left: #{$i}px;
+  }
+
+  .py-#{$i} {
+    padding-top: #{$i}px;
+    padding-bottom: #{$i}px;
+  }
+
+  .ml-#{$i} {
+    margin-left: #{$i}px;
+  }
+
+  .mr-#{$i} {
+    margin-right: #{$i}px;
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+  .mt-#{$i} {
+    margin-top: #{$i}px;
+  }
+}
+
+.card-header-no-padding {
+  margin: -16px -16px 0 -16px;
+  margin-top: -16px !important;
+}
+
+.card-header {
+  background-color: #fafafa;
+}
+
+.card-section {
+  max-width: 800px;
+}
